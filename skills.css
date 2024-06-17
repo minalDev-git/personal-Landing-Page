@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skill{
+    width: 100%;
+    height: 100%;
+}
+.myskill{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: black;
+}
+.myskill h1{
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fff;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.myskill span{
+    color: blueviolet;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1px 0;
+    padding: 0;
+}
+.card-items{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-gap: 1.5rem;
+    background-color: black;
+    max-width: 1300px;
+    justify-content: center;
+}
+.card{
+    background-color: black;
+    min-height: 6rem;
+    margin: 12px auto;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: rgb(179, 139, 216);
+    transition: all 0.3s ease;
+}
+.card a{
+    background: transparent;
+}
+.card .icon{
+    height: 80px;
+    width: auto;
+    background: transparent;
+}
+@media screen and (max-width: 600px) {
+    .myskill{
+        margin: auto;
+        display: flex;
+        width: 100%;
+    }
+    .myskill h1{
+        margin: auto;
+        padding: 22px;
+        font-size: 40px;
+    }
+    .myskill span{
+        font-size: 40px;
+    }
+    .card-items{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 0.5rem;
+        margin: 0px auto;
+    }
+    .card{
+        margin: 20px auto;
+        padding: 10px;
+        min-height: 5rem;
+    }
+    .card .icon{
+        height: 60px;
+    }
+}
